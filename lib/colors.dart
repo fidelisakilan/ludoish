@@ -10,3 +10,5 @@ Color primaryColor = Color(0xff03111F);
 Color primaryColor2 = Color(0xff06233e);
 Color accentOrange = Color(0xfffd6a00);
 Color accentYellow = Color(0xffff9900);
+Color buttonBorder = Color(0xffE78D06);
+
