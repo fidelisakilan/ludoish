@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ludoish/colors.dart';
+import 'package:ludoish/dashboard.dart';
 
 class UserDetailsScreen extends StatefulWidget {
   @override
@@ -215,9 +216,12 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
                   shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                 ),
-                onPressed: () {
-                  print('Pressed');
-                },
+                onPressed: () => Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DashboardScreen(),
+                  ),
+                ),
               ),
             )
           ],
